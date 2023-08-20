@@ -6,11 +6,11 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["MeusProdutos.API/MeusProdutos.API.csproj", "MeusProdutos.API/"]
-COPY ["MeusProdutos.Models/MeusProdutos.Models.csproj", "MeusProdutos.Models/"]
-COPY ["MeusProdutos.Repositories/MeusProdutos.Repositories.csproj", "MeusProdutos.Repositories/"]
-COPY ["MeusProdutos.Services/MeusProdutos.Services.csproj", "MeusProdutos.Services/"]
-RUN dotnet restore "MeusProdutos.API/MeusProdutos.API.csproj"
+COPY ["MeusProdutos.API.csproj", "MeusProdutos.API/"]
+COPY ["MeusProdutos.Models.csproj", "MeusProdutos.Models/"]
+COPY ["MeusProdutos.Repositories.csproj", "MeusProdutos.Repositories/"]
+COPY ["MeusProdutos.Services.csproj", "MeusProdutos.Services/"]
+RUN dotnet restore "MeusProdutos.API.csproj"
 COPY . .
 WORKDIR "./MeusProdutos.API"
 RUN dotnet build "MeusProdutos.API.csproj" -c Release -o /app/build
