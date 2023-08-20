@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeusProdutos.Services", "Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeusProdutos.Models", "MeusProdutos.Models\MeusProdutos.Models.csproj", "{E9019837-72C6-46C6-A8D7-274866FE1BB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeusProdutos.Data", "MeusProdutos.Repositories\MeusProdutos.Data.csproj", "{868BA909-B1A6-46AB-9197-1F62C4832657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeusProdutos.Data", "MeusProdutos.Data\MeusProdutos.Data.csproj", "{868BA909-B1A6-46AB-9197-1F62C4832657}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
